@@ -65,8 +65,8 @@ public class RNAndroidLocationEnablerModule extends ReactContextBaseJavaModule i
 
         LocationRequest locationRequest = LocationRequest.create();
         locationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        locationRequest.setInterval(params.hasKey(LOCATION_INTERVAL_DURATION_PARAMS_KEY) ? params.getInt(LOCATION_INTERVAL_DURATION_PARAMS_KEY) : DEFAULT_INTERVAL_DURATION);
-        locationRequest.setFastestInterval(params.hasKey(LOCATION_FAST_INTERVAL_DURATION_PARAMS_KEY) ? params.getInt(LOCATION_FAST_INTERVAL_DURATION_PARAMS_KEY) : DEFAULT_FAST_INTERVAL_DURATION);
+        // locationRequest.setInterval(params.hasKey(LOCATION_INTERVAL_DURATION_PARAMS_KEY) ? params.getInt(LOCATION_INTERVAL_DURATION_PARAMS_KEY) : DEFAULT_INTERVAL_DURATION);
+        // locationRequest.setFastestInterval(params.hasKey(LOCATION_FAST_INTERVAL_DURATION_PARAMS_KEY) ? params.getInt(LOCATION_FAST_INTERVAL_DURATION_PARAMS_KEY) : DEFAULT_FAST_INTERVAL_DURATION);
         LocationSettingsRequest.Builder builder = new LocationSettingsRequest.Builder()
                 .addLocationRequest(locationRequest);
         builder.setAlwaysShow(true);
